@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#F2FFA407"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:background="@drawable/vien3"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="8dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="64dp">
+            <Button
+                android:layout_marginRight="2dp"
+                android:background="@drawable/vien_btn"
+                android:layout_weight="1"
+                android:onClick="viewClass"
+                android:text="Xem danh sách lớp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:drawableRight="@android:drawable/ic_menu_view" />
+            <Button
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/vien_btn"
+                android:layout_weight="1"
+                android:drawableRight="@android:drawable/ic_menu_week"
+                android:onClick="qlSinhVien"
+                android:text="Quản Lý Sinh Viên"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"/>
+        </LinearLayout>
+        <Button
+            android:background="@drawable/vien_btn"
+            android:layout_marginBottom="8dp"
+            android:layout_marginHorizontal="8dp"
+            android:drawableRight="@android:drawable/ic_menu_add"
+            android:onClick="addClass"
+            android:text="Thêm Lớp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="8dp" />
+</LinearLayout>
